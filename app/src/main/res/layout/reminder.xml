@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|center_vertical" >
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" 
+        android:background="@drawable/reminder_background"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+	    <LinearLayout
+	         android:id="@+id/llList"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:orientation="vertical" >
+		</LinearLayout>
+		    
+	    <LinearLayout
+	        android:id="@+id/linearLayout2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+	
+	        <Button
+	            android:id="@+id/btOpenplanplaner"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:onClick="onClick"
+	            android:text="@string/open_planplaner" />
+	
+	        <Button
+	            android:id="@+id/btRemoveReminder"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:onClick="onClick"
+	            android:text="@string/remove_reminder" />
+	        
+	    </LinearLayout>
+
+	</LinearLayout>
+
+</RelativeLayout>

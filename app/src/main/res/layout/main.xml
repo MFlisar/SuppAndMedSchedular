@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical" >
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+			
+	        <TextView
+	            android:id="@+id/textView2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:text="@string/plan" />
+			
+	        <Spinner
+	            android:id="@+id/spPlan"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1" />
+	
+	    </LinearLayout>
+		
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <TextView
+	            android:id="@+id/tvPlanCountInfo"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:text="TextView" />
+	        	
+	        <LinearLayout
+	            android:id="@+id/llButtons"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_toRightOf="@+id/btView"
+	            android:layout_below="@+id/tvPlanCountInfo" >
+	
+	            <Button
+	                android:id="@+id/btSteroidMenu"
+	                style="?android:attr/buttonStyleSmall"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:onClick="onClick"
+	                android:text="@string/substance" />
+	
+	            <Button
+	                android:id="@+id/btPlanMenu"
+	                style="?android:attr/buttonStyleSmall"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:onClick="onClick"
+	                android:text="@string/plan" />
+	        </LinearLayout>
+	
+	        <Button
+	            android:id="@+id/btView"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/tvPlanCountInfo"
+	            android:onClick="onClick"
+	            android:text="@string/change_view" />
+	
+	    </RelativeLayout>
+	
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+					
+	        <LinearLayout
+	            android:id="@+id/llTopInfoLeft"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+			
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:orientation="horizontal" >
+	
+	                <TextView
+	                    android:id="@+id/textView1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/start_date" />
+	
+	                <TextView
+	                    android:id="@+id/tvStartDate"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/date" />
+	            </LinearLayout>
+	
+	        </LinearLayout>
+					
+	        <LinearLayout
+	            android:id="@+id/llTopInfoRight"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true" >
+	
+	            <TextView
+	                android:id="@+id/textView3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="5dp"
+	                android:text="@string/status" />
+	
+	            <TextView
+	                android:id="@+id/tvStatus"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="5dp"
+	                android:text="@string/status" />
+	        </LinearLayout>
+	
+	    </RelativeLayout>
+			
+	    <HorizontalScrollView
+	        android:id="@+id/containerTable"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" >
+		
+	        <LinearLayout
+	            android:id="@+id/llInScrollView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:orientation="horizontal" >
+	
+	        </LinearLayout>
+	    </HorizontalScrollView>
+	</LinearLayout>
+</TableLayout>

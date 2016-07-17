@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/settings" android:title="@string/settings" android:icon="@drawable/ic_menu_preferences"/>
+    <item android:id="@+id/edit_substances" android:title="@string/edit_substances" android:icon="@drawable/ic_menu_edit"/>
+    <item android:id="@+id/filter" android:title="@string/filter" android:icon="@drawable/ic_filter"/>
+    <item android:id="@+id/show_table_graph" android:title="@string/show_table_graph_toggle" android:icon="@drawable/icon_tabelle"/>
+    <item android:id="@+id/link_data_in_graph" android:title="@string/link_data_in_graph" android:icon="@drawable/ic_merge"/>
+    
+</menu>

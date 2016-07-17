@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    
+	<PreferenceCategory android:title="@string/general">
+    	
+    	<EditTextPreference 
+	        android:name="max_week_count"
+	        android:title="@string/prefMaxWeekCountTitle"
+	        android:summary="@string/prefMaxWeekCountText"
+	        android:defaultValue="50"
+	        android:key="@string/PREF_MAX_WEEK_COUNT" />
+    	
+    	<EditTextPreference 
+	        android:name="max_frontload_day"
+	        android:title="@string/prefMaxFrontloadDayTitle"
+	        android:summary="@string/prefMaxFrontloadDayText"
+	        android:defaultValue="7"
+	        android:key="@string/PREF_MAX_FRONTLOAD_DAY" />
+    	
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:title="@string/alert_general">
+	    
+	    <CheckBoxPreference 
+	        android:name="remind"
+	        android:title="@string/prefReminderTitle"
+	        android:summary="@string/prefReminderText"
+	        android:defaultValue="true"
+	        android:key="@string/PREF_REMIND" />
+	    
+	    <CheckBoxPreference 
+	        android:name="remindWithVibrate"
+	        android:title="Vibration aktivieren"
+	        android:summary="Bei Alarm vibrieren"
+	        android:defaultValue="true"
+	        android:key="@string/PREF_REMIND_WITH_VIBRATE" />
+	    
+	    <CheckBoxPreference 
+	        android:name="remindWithSound"
+	        android:title="Sound aktivieren"
+	        android:summary="Bei Alarm Sound abspielen"
+	        android:defaultValue="true"
+	        android:key="@string/PREF_REMIND_WITH_SOUND" />
+	    
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:title="@string/alert_standard_times">
+	    
+	    <ListPreference 
+            android:key="@string/PREF_HOUR"
+            android:title="@string/prefHourTitle"
+            android:summary="@string/prefHourText"
+            android:defaultValue="8" 
+            android:entries="@array/hours"
+            android:entryValues="@array/hours" /> 
+	    <ListPreference 
+            android:key="@string/PREF_MINUTES"
+            android:title="@string/prefMinuteTitle"
+            android:summary="@string/prefMinuteTitle"
+            android:defaultValue="0" 
+            android:entries="@array/minutes"
+            android:entryValues="@array/minutes" /> 
+
+	</PreferenceCategory>
+	
+</PreferenceScreen>

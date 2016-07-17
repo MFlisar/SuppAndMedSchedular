@@ -1,0 +1,32 @@
+<resources>
+	<item type="id" name="key_week"/>
+	<item type="id" name="key_cell"/>
+	
+	<item type="id" name="key_base_steroid_index"/>
+	<item type="id" name="key_type_index"/>
+	
+	<item type="id" name="key_substance_index"/>
+	<item type="id" name="key_day_index"/>
+	
+	<item type="id" name="key_delete_substance"/>
+	<item type="id" name="key_edit_substance"/>
+	<item type="id" name="key_rowheader_substance"/>
+	
+	<item type="id" name="key_name"/>
+	<item type="id" name="key_step_size"/>
+	
+	<item type="id" name="HeaderTable"/>
+	<item type="id" name="BodyTable"/>
+	
+	<item type="id" name="create_plan"/>
+	<item type="id" name="edit_plan"/>
+	<item type="id" name="delete_plan"/>
+	
+	<item type="id" name="add_substance"/>
+	<item type="id" name="delete_all_substances"/>
+	
+	<item type="id" name="edit_substance"/>
+	<item type="id" name="delete_substance"/>
+	
+	
+</resources>

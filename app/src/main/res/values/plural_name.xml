@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<plurals name="plan_count_info_string">
+        <item quantity="one">1 Plan vorhanden.</item>
+        <item quantity="other">%d Pläne vorhanden.</item>
+    </plurals>
+    <plurals name="substance">
+        <item quantity="one">Substanz</item>
+        <item quantity="other">Substanzen</item>
+    </plurals>
+    <plurals name="day_4">
+        <item quantity="one">%d Tag</item>
+        <item quantity="other">%d Tagen</item>
+    </plurals>
+    <plurals name="have_to_be_taken_today">
+        <item quantity="one">muss heute genommen werden!</item>
+        <item quantity="other">müssen heute genommen werden!</item>
+    </plurals>
+    <plurals name="amount_string_pieces">
+        <item quantity="one">1 Stk.</item>
+        <item quantity="other">%d Stk.</item>
+    </plurals>
+</resources>
