@@ -6,3 +6,6 @@ App is really old and UI and code is outdated!
 Demo Video is here: https://www.dropbox.com/s/hb9f71breiqupho/2016_07_17_13_28_42.mp4?dl=0
 
 Apk Download: https://github.com/MFlisar/SuppAndMedSchedular/raw/master/app/app-release.apk
+
+##License
+Library falls under [Apache 2.0] (LICENSE.md)
